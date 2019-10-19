@@ -18,6 +18,12 @@ namespace BubbleSort
             ISortBehavior quickSort = new QuickSort();
             quickSort.Sort(arrayToQuickSort);
             arrayToQuickSort.ToList().ForEach(t => Console.WriteLine(t));
+
+            Console.WriteLine("Merge Sort");
+            int[] arrayToMergeSort = new int[] { 38, 27, 43, 3, 9, 82, 10 };
+            ISortBehavior mergeSort = new MergeSort();
+            mergeSort.Sort(arrayToMergeSort);
+            arrayToMergeSort.ToList().ForEach(t => Console.WriteLine(t));
         }
     }
 }
