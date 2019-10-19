@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BubbleSort
 {
-    class BubbleSort : SortBehavior
+    class BubbleSort : ISortBehavior
     {
         public void Sort(int[] array)
         {
